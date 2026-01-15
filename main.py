@@ -1,11 +1,7 @@
-import base64
-import sys
 import os
-import concurrent.futures
 import requests
 from dotenv import load_dotenv
 from openai import OpenAI
-from pydantic import BaseModel, Field
 
 load_dotenv(override=True)
 client = OpenAI(
